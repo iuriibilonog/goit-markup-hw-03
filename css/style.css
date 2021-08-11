@@ -33,15 +33,15 @@ ol {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
-/* Header */
+/* ========= Header ========= */
 
 .logo {
   font-family: Raleway;
@@ -66,9 +66,16 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.navigation .link-active {
+.navigation .nav-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link.active {
   color: var(--accent-text-color);
   font-style: normal;
   font-weight: 500;
@@ -83,7 +90,7 @@ ol {
 }
 
 .navigation .link:focus {
-  ccolor: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .contacts .link {
@@ -94,6 +101,8 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contacts .link:hover {
@@ -104,10 +113,30 @@ ol {
   color: var(--accent-text-color);
 }
 
-/* Hero */
+.page-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
 
-.hero,
-footer {
+.navigation {
+  display: flex;
+  margin-left: 78px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+/* ========= End Header ========= */
+
+/* ======== Hero ======== */
+
+.hero {
   background-color: #2f303a;
   text-align: center;
 }
@@ -120,6 +149,10 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 .hero button {
@@ -136,7 +169,21 @@ footer {
   color: var(--white-text-color);
 }
 
-/* Наши приемущества */
+/* ======== End Hero ======== */
+
+/* ========= Наши приемущества ========= */
+
+.benefits-title {
+  display: none;
+}
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits-list {
+  display: flex;
+}
 
 .benefits .title {
   font-style: normal;
@@ -145,6 +192,7 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefits .text {
@@ -152,9 +200,16 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
 }
 
-/* Чем мы занимаемся */
+.benefits-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ========= End Наши приемущества ========= */
+
+/* ========= Чем мы занимаемся ========= */
 
 .sections-title {
   font-style: normal;
@@ -163,15 +218,37 @@ footer {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
+.work-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+/* ========= End Чем мы занимаемся ========= */
+
 /* Наша команда */
+
+.our-team-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.our-team .sections-title {
+  padding-top: 94px;
+}
 
 .our-team .person-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .our-team .person-text {
@@ -179,17 +256,26 @@ footer {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 /* Footer */
 
-/* background идентичный с героем, прописал в герое */
+footer {
+  background-color: #2f303a;
+}
+
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 footer .logo {
   color: var(--white-text-color);
 }
 
 footer .footer-address {
+  margin-top: 20px;
   color: var(--white-text-color);
   font-weight: 400;
   font-size: 14px;
