@@ -1,0 +1,238 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo-color {
+  color: var(--accent-text-color);
+}
+
+.navigation .link {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navigation .link-active {
+  color: var(--accent-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navigation .link:hover {
+  color: var(--accent-text-color);
+}
+
+.navigation .link:focus {
+  ccolor: var(--accent-text-color);
+}
+
+.contacts .link {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts .link:hover {
+  color: var(--accent-text-color);
+}
+
+.contacts .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Hero */
+
+.hero,
+footer {
+  background-color: #2f303a;
+}
+
+.hero .title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+}
+
+.hero button {
+  background-color: var(--accent-text-color);
+}
+
+.hero .button-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+}
+
+/* Наши приемущества */
+
+.benefits .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits .text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.sections-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+
+.our-team .person-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.our-team .person-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+
+/* background идентичный с героем, прописал в герое */
+
+footer .logo {
+  color: var(--white-text-color);
+}
+
+footer .footer-address {
+  color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+footer .footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+footer .footer-contacts:hover {
+  color: var(--accent-text-color);
+}
+
+footer .footer-contacts:focus {
+  color: var(--accent-text-color);
+}
+
+/* СТИЛИ ДЛЯ ПОРТФОЛИО */
+
+/* Не прописывал стили для header и footer, так как
+классы идентичные с index.html */
+
+/* Buttons */
+
+.filter-portfolio button {
+  cursor: pointer;
+}
+
+.filter-portfolio button:hover {
+  background-color: var(--accent-text-color);
+  color: var(--white-text-color);
+}
+
+.filter-portfolio button:focus {
+  background-color: var(--accent-text-color);
+  color: var(--white-text-color);
+}
+
+.filter-portfolio button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
+.projects .title {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects .text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
