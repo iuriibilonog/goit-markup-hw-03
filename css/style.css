@@ -155,8 +155,12 @@ ol {
   margin-bottom: 30px;
 }
 
-.hero button {
+.modal-btn {
   background-color: var(--accent-text-color);
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .hero .button-name {
@@ -183,6 +187,15 @@ ol {
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.benefits-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc((100% - 120px) / 4);
 }
 
 .benefits .title {
@@ -200,17 +213,15 @@ ol {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
-}
-
-.benefits-list > li:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* ========= End Наши приемущества ========= */
 
 /* ========= Чем мы занимаемся ========= */
 
+.work {
+  padding-bottom: 94px;
+}
 .sections-title {
   font-style: normal;
   font-weight: 700;
@@ -223,22 +234,40 @@ ol {
 
 .work-list {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.work-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc((100% - 90px) / 3);
 }
 
 /* ========= End Чем мы занимаемся ========= */
 
 /* Наша команда */
 
-.our-team-list {
-  display: flex;
-  justify-content: space-between;
+.our-team {
   padding-bottom: 94px;
 }
 
-.our-team .sections-title {
-  padding-top: 94px;
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.our-team-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: calc((100% - 120px) / 4);
+}
+
+.our-team-item-desc {
+  padding-top: 30px;
 }
 
 .our-team .person-title {
@@ -247,7 +276,6 @@ ol {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-top: 30px;
   padding-bottom: 10px;
 }
 
