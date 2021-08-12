@@ -44,6 +44,10 @@ ol {
 
 /* ========= Header ========= */
 
+header {
+  border-bottom: 1px solid var(--cards-shadow-color);
+}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -57,6 +61,10 @@ ol {
 
 .logo-color {
   color: var(--accent-text-color);
+}
+
+nav {
+  margin-left: 93px;
 }
 
 .navigation .link {
@@ -117,12 +125,10 @@ ol {
 .page-header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
   display: flex;
-  margin-left: 78px;
 }
 
 .contacts {
@@ -140,6 +146,8 @@ ol {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .title {
@@ -150,7 +158,7 @@ ol {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
-  width: 696px;
+  max-width: 696px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -178,9 +186,20 @@ ol {
 
 /* ========= Наши приемущества ========= */
 
-.benefits-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -251,6 +270,7 @@ ol {
 /* Наша команда */
 
 .our-team {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -269,6 +289,7 @@ ol {
 
 .our-team-item-desc {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team .person-title {
@@ -277,7 +298,7 @@ ol {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .our-team .person-text {
@@ -303,13 +324,18 @@ footer .logo {
   color: var(--white-text-color);
 }
 
-footer .footer-address {
+address {
   margin-top: 20px;
+}
+
+footer .footer-address {
   color: var(--white-text-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 
 footer .footer-contacts {
@@ -320,6 +346,10 @@ footer .footer-contacts {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+.footer-address-list li:first-child {
+  margin-bottom: 9px;
 }
 
 footer .footer-contacts:hover {
@@ -340,8 +370,8 @@ footer .footer-contacts:focus {
 }
 
 .our-projects {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-portfolio {
@@ -405,6 +435,7 @@ footer .footer-contacts:focus {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+  padding-right: 24px;
   border: 1px solid var(--cards-shadow-color);
   border-top: 0;
 }
